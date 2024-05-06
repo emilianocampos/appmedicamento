@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Tarea } from './componentes/Tarea';
 import { Form } from './componentes/Form';
 import { FechaInput } from './componentes/Fecha';
+import Swal from 'sweetalert2';
 import './App.css';
 
 function App() {
@@ -29,12 +30,28 @@ function App() {
     e.preventDefault();
 
     if (tarea.trim() === '') {
-      alert('Por favor ingresa una tarea');
+      Swal.fire({
+        title: "Ingresar medicamento",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      });
       return;
     }
 
     if (fecha.trim() === '') {
-      alert('Por favor selecciona una fecha');
+      Swal.fire("Seleccionar una fecha valida");
       return;
     }
 
