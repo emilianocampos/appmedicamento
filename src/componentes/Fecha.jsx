@@ -22,9 +22,9 @@ function FechaInput({ onFechaSeleccionada }) {
     <form onSubmit={handleSubmit}>
       <label>
         Fecha:
-        <input type="date" value={fecha} onChange={handleFechaChange} />
+        <input  id='inp'type="date" value={fecha} onChange={handleFechaChange} />
       </label>
-      <button type="submit">Seleccionar</button>
+      <button type="submit" className='btnad'>Seleccionar Fecha</button>
     </form>
   );
 }

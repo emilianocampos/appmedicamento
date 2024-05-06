@@ -40,15 +40,58 @@
     border-radius: 10px;
     margin: 10px;
 
-    box-shadow: red 0px 20px 30px -10px;
+    box-shadow: rgb(26, 26, 26) 0px 20px 30px -10px;
     transition: all 1s ease-in-out;
-    background-color: rgb(90, 173, 91);
+    background-color:#000000;
+    color: rgb(255, 224, 49);
 
 }
 
 .containerTareaCompletada {
 
     transition: all 1s ease-in-out;
-    background-color: greenyellow;
+    background-color: rgb(212, 11, 11);
+
+}
+#completar{
+    background: linear-gradient(to right,#000000 ,#6d6517);
+    background-color: #000000;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 17px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    padding: 13px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px 10px 0px #2D2D2D;
+    text-shadow: 2px 2px 0px #000;
+    margin: 20px;
+
+
+}
+#eliminar{
+
+    background: linear-gradient(to right,#000000 ,#6d6517);
+    background-color: #000000;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 17px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    padding: 13px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px 10px 0px #2D2D2D;
+    text-shadow: 2px 2px 0px #000;
+    margin: 20px;
 
 }

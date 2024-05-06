@@ -7,8 +7,8 @@ const Tarea = ({ tarea, borrarTarea }) => {
     return (
         <div className={completado ? 'containerTarea containerTareaCompletada' : 'containerTarea'}>
             <h2 className={completado ? 'completada' : 'noCompletada'}>{tarea.tarea}</h2>
-            <p>Fecha: {tarea.fecha}</p> {/* Muestra la fecha */}
-            <button id='completar' onClick={() => setCompletada(!completado)}>{completado ? 'No completada' : 'Completada'}</button>
+            <p className="fecha">Fecha: {tarea.fecha}</p> {/* Muestra la fecha */}
+            <button id='completar' onClick={() => setCompletada(!completado)}>{completado ? 'No entregado' : 'Entregado'}</button>
             <button onClick={() => borrarTarea(tarea.id)} id="eliminar">Eliminar</button>
         </div>
     )
